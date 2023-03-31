@@ -30,6 +30,39 @@ linksCtrl.renderLinks = async (req, res) => {
     res.render('links/list', { links });
 }
 
+linksCtrl.renderTasks = async (req, res) => {
+    const tasks = await pool.query('SELECT * FROM tasks WHERE  done =1 and respuesta_medico is  null', [req.user.id]);
+    res.render('links/tasks', { tasks });
+}
+
+linksCtrl.editTask = async (req,res) => {
+    const { id } = req.params;
+    const {respuesta_medico} = req.body; 
+    const newTask = {
+        
+        respuesta_medico,
+    };
+    
+    
+    await pool.query('UPDATE tasks set ? WHERE id = ?', [newTask, id]);
+    req.flash('success_msg', 'Solicitud Actualizado Satisfactoriamente');
+    res.redirect('/links/tasks');
+}
+
+
+linksCtrl.renderEditTask = async (req, res) => {
+    const { id } = req.params;
+    const tasks = await pool.query('SELECT * FROM tasks WHERE id = ?', [id]);
+    console.log(tasks);
+    res.render('links/edit_task', {tasks: tasks[0]});
+};
+
+
+
+
+
+
+
 linksCtrl.renderLinks_admin = async (req, res) => {
     const links_admin = await pool.query('SELECT * FROM links WHERE user_id = 20', [req.user.id]);
     res.render('links/list_todas', { links_admin });

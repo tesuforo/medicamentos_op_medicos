@@ -1,0 +1,185 @@
+
+        <div class="col-md-8 mx-auto">
+
+            <div class="card text-dark bg-light mb-3">
+                <div class="card-body">
+                    <h2 class="card-title">Ingreso de Medicamento</h2>
+                    <form action="/links/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control" placeholder="MD" value="{{link.title}}"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="url" rows="2" class="form-control"
+                                placeholder="Descripción">{{link.url}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="description" rows="2" class="form-control"
+                                placeholder="Descripción Generico">{{link.description}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="cum" class="form-control" placeholder="Cum" {{link.cum}}>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                    <h4><span class="label label-default">Laboratorio Clínico</span></h4>
+                           <div class="form-group">
+                                <select class="form-control" name="laboratorio" placeholder="Laboratorio"{{link.laboratorio}}>
+                             <option value="A. MENARINI LATIN AMERICA S.L.U  SUCURSAL COLOMBIA">A. MENARINI LATIN AMERICA S.L.U  SUCURSAL COLOMBIA</option>
+<option value="ABBOTT LAB.DE COLOMBIA S.A">ABBOTT LAB.DE COLOMBIA S.A</option>
+<option value="ABBVIE S.A.S.">ABBVIE S.A.S.</option>
+<option value="ADS PHARMA SAS">ADS PHARMA SAS</option>
+<option value="ALFA TRADING S.A.S.">ALFA TRADING S.A.S.</option>
+<option value="ALLERGAN DE COLOMBIA S.A.">ALLERGAN DE COLOMBIA S.A.</option>
+<option value="AMAREY NOVA MEDICA S.A.">AMAREY NOVA MEDICA S.A.</option>
+<option value="AMGEN BIOTECNOLOGICA S.A.S.">AMGEN BIOTECNOLOGICA S.A.S.</option>
+<option value="ANGLOPHARMA S.A">ANGLOPHARMA S.A</option>
+<option value="ANZG LIMITADA">ANZG LIMITADA</option>
+<option value="ASTELLAS FARMA COLOMBIA S.A.S.">ASTELLAS FARMA COLOMBIA S.A.S.</option>
+<option value="ASTRAZENECA  COLOMBIA S.A.S.">ASTRAZENECA  COLOMBIA S.A.S.</option>
+<option value="AULEN PHARMA S.A.">AULEN PHARMA S.A.</option>
+<option value="AUROBINDO PHARMA COLOMBIA S.A.S.">AUROBINDO PHARMA COLOMBIA S.A.S.</option>
+<option value="AXON PHARMA S.A.S.">AXON PHARMA S.A.S.</option>
+<option value="BAXALTA COLOMBIA S.A.S.">BAXALTA COLOMBIA S.A.S.</option>
+<option value="BAYER S.A (CONSUMO)">BAYER S.A (CONSUMO)</option>
+<option value="BAYER S.A.  (FARMA)">BAYER S.A.  (FARMA)</option>
+<option value="BCN MEDICAL S.A.">BCN MEDICAL S.A.</option>
+<option value="BECTON DICKINSON DE COLOMBIA LTDA">BECTON DICKINSON DE COLOMBIA LTDA</option>
+<option value="BIOQUIFAR FARMACEUTICA S.A.">BIOQUIFAR FARMACEUTICA S.A.</option>
+<option value="BIOSIDUS COLOMBIA S.A.S.">BIOSIDUS COLOMBIA S.A.S.</option>
+<option value="BIOTOSCANA FARMA S.A">BIOTOSCANA FARMA S.A</option>
+<option value="BLAU FARMACEUTICA COLOMBIA S.A.S.">BLAU FARMACEUTICA COLOMBIA S.A.S.</option>
+<option value="BOEHRINGER   INGELHEIM   S A">BOEHRINGER   INGELHEIM   S A</option>
+<option value="BOSTON MEDICAL DEVICES COLOMBIA LTDA">BOSTON MEDICAL DEVICES COLOMBIA LTDA</option>
+<option value="BOYDORR SAS">BOYDORR SAS</option>
+<option value="BRISTOL- MYERS SQUIBB DE COLOMBIA S.A.">BRISTOL- MYERS SQUIBB DE COLOMBIA S.A.</option>
+<option value="CALIER FARMACEUTICA DE COLOMBIA S A">CALIER FARMACEUTICA DE COLOMBIA S A</option>
+<option value="CIPLA COLOMBIA SAS">CIPLA COLOMBIA SAS</option>
+<option value="CLINICA DE MARLY S A">CLINICA DE MARLY S A</option>
+<option value="CLINICOS Y HOSPITALARIOS DE COLOMBIA S.A.">CLINICOS Y HOSPITALARIOS DE COLOMBIA S.A.</option>
+<option value="CLOSTER PHARMA S.A.">CLOSTER PHARMA S.A.</option>
+<option value="COL/ANA KIMBERLY COLPAPEL S.A.">COL/ANA KIMBERLY COLPAPEL S.A.</option>
+<option value="DANONE BABY NUTRITION COLOMBIA S.A.S.">DANONE BABY NUTRITION COLOMBIA S.A.S.</option>
+<option value="DIABETRICS HEALTHCARE S.A.S.">DIABETRICS HEALTHCARE S.A.S.</option>
+<option value="DROGUERIA SAN JORGE">DROGUERIA SAN JORGE</option>
+<option value="DROGUERIAS Y FARMACIAS CRUZ VERDE S.A.S.  .">DROGUERIAS Y FARMACIAS CRUZ VERDE S.A.S.  .</option>
+<option value="ELI LILLY INTERAMERICANA INC">ELI LILLY INTERAMERICANA INC</option>
+<option value="ESPECIALIDADES OFTALMOLOGICAS S.A.">ESPECIALIDADES OFTALMOLOGICAS S.A.</option>
+<option value="ETERNA  S.A.">ETERNA  S.A.</option>
+<option value="EUROETIKA LTDA">EUROETIKA LTDA</option>
+<option value="EUROFARMA COLOMBIA S.A.S.">EUROFARMA COLOMBIA S.A.S.</option>
+<option value="FARMA DE COLOMBIA S.A.S.">FARMA DE COLOMBIA S.A.S.</option>
+<option value="FARMACOL CHINOIN S.A.S.">FARMACOL CHINOIN S.A.S.</option>
+<option value="FARMASER S.A.">FARMASER S.A.</option>
+<option value="FRANCO ARANGO Y CIA S EN C">FRANCO ARANGO Y CIA S EN C</option>
+<option value="FRESENIUS KABI COLOMBIA S.A.S.">FRESENIUS KABI COLOMBIA S.A.S.</option>
+<option value="GALDERMA DE COLOMBIA S.A">GALDERMA DE COLOMBIA S.A</option>
+<option value="GEDEON RICHTER COLOMBIA S.A.S.">GEDEON RICHTER COLOMBIA S.A.S.</option>
+<option value="GENFAR S.A.">GENFAR S.A.</option>
+<option value="GLAXOSMITHKLINE COLOMBIA S.A.">GLAXOSMITHKLINE COLOMBIA S.A.</option>
+<option value="GLAXOSMITHKLINE CONSUMER HEALTHCARE COLOMBIA S.A.S.">GLAXOSMITHKLINE CONSUMER HEALTHCARE COLOMBIA S.A.S.</option>
+<option value="GLENMARK PHARMACEUTICALS COLOMBIA S.A.S.">GLENMARK PHARMACEUTICALS COLOMBIA S.A.S.</option>
+<option value="GLOBAL SERVICE PHARMACEUTICAL S.A.S.">GLOBAL SERVICE PHARMACEUTICAL S.A.S.</option>
+<option value="GRUNENTHAL COLOMBIANA S.A.">GRUNENTHAL COLOMBIANA S.A.</option>
+<option value="HANNCLEM PHARMA S.A.S.">HANNCLEM PHARMA S.A.S.</option>
+<option value="HB HUMAN BIOSCIENCE S.A.S.">HB HUMAN BIOSCIENCE S.A.S.</option>
+<option value="HEALTHY AMERICAM COLOMBIA S.A.S">HEALTHY AMERICAM COLOMBIA S.A.S</option>
+<option value="HUMAX PHARMACEUTICAL S.A.">HUMAX PHARMACEUTICAL S.A.</option>
+<option value="JANSSEN CILAG S.A">JANSSEN CILAG S.A</option>
+<option value="LA SANTE S.A. (GALENO)">LA SANTE S.A. (GALENO)</option>
+<option value="LABORATORIO INTERNACIONAL DE COLOMBIA S.A.S.">LABORATORIO INTERNACIONAL DE COLOMBIA S.A.S.</option>
+<option value="LABORATORIO LAPROFF S.A.">LABORATORIO LAPROFF S.A.</option>
+<option value="LABORATORIOS ALCON DE COLOMBIA S.A">LABORATORIOS ALCON DE COLOMBIA S.A</option>
+<option value="LABORATORIOS BAGO DE COL S.A.S.">LABORATORIOS BAGO DE COL S.A.S.</option>
+<option value="LABORATORIOS BAXTER S.A.">LABORATORIOS BAXTER S.A.</option>
+<option value="LABORATORIOS BEST S.A  (MARCA PROPIA)">LABORATORIOS BEST S.A  (MARCA PROPIA)</option>
+<option value="LABORATORIOS BIOPAS S.A.">LABORATORIOS BIOPAS S.A.</option>
+<option value="LABORATORIOS BREMYMG  S.A.S.">LABORATORIOS BREMYMG  S.A.S.</option>
+<option value="LABORATORIOS BUSSIE S.A">LABORATORIOS BUSSIE S.A</option>
+<option value="LABORATORIOS CHALVER DE C/BIA">LABORATORIOS CHALVER DE C/BIA</option>
+<option value="LABORATORIOS ECAR S.A.">LABORATORIOS ECAR S.A.</option>
+<option value="laboratorios farmaceuticos ophalac s.a.">laboratorios farmaceuticos ophalac s.a.</option>
+<option value="LABORATORIOS GERCO S.A.">LABORATORIOS GERCO S.A.</option>
+<option value="LABORATORIOS INCOBRA S.A.">LABORATORIOS INCOBRA S.A.</option>
+<option value="LABORATORIOS LA SANTE S.A. (GENERICOS)">LABORATORIOS LA SANTE S.A. (GENERICOS)</option>
+<option value="LABORATORIOS LEGRAND S.A">LABORATORIOS LEGRAND S.A</option>
+<option value="LABORATORIOS LICOL S.A.S">LABORATORIOS LICOL S.A.S</option>
+<option value="LABORATORIOS REMO S.A.S.">LABORATORIOS REMO S.A.S.</option>
+<option value="LABORATORIOS RICHMOND COLOMBIA S.A.S.">LABORATORIOS RICHMOND COLOMBIA S.A.S.</option>
+<option value="LABORATORIOS SERVIER DE COLOMBIA S.A.S.">LABORATORIOS SERVIER DE COLOMBIA S.A.S.</option>
+<option value="LABORATORIOS SIEGFRIED S.A.S.">LABORATORIOS SIEGFRIED S.A.S.</option>
+<option value="LABORATORIOS SOPHIA DE COLOMBIA LTDA">LABORATORIOS SOPHIA DE COLOMBIA LTDA</option>
+<option value="LABQUIFAR LTDA.">LABQUIFAR LTDA.</option>
+<option value="LAFRANCOL S.A.S .">LAFRANCOL S.A.S .</option>
+<option value="LINEAS FARMACEUTICAS ESPECIALIZADAS S.A.S.">LINEAS FARMACEUTICAS ESPECIALIZADAS S.A.S.</option>
+<option value="MEDICAL SUPPLIES CORP S.A.S">MEDICAL SUPPLIES CORP S.A.S</option>
+<option value="MEDITEC S.A.">MEDITEC S.A.</option>
+<option value="MEDTRONIC COLOMBIA S.A.">MEDTRONIC COLOMBIA S.A.</option>
+<option value="MEGALABS COLOMBIA S.A.S.">MEGALABS COLOMBIA S.A.S.</option>
+<option value="MEMPHIS PRODUCTOS LTDA">MEMPHIS PRODUCTOS LTDA</option>
+<option value="MERCK S.A">MERCK S.A</option>
+<option value="MERCK SHARP  DOHME COLOMBIA S.A.S">MERCK SHARP  DOHME COLOMBIA S.A.S</option>
+<option value="MSN LABS AMERICAS S.A.S.">MSN LABS AMERICAS S.A.S.</option>
+<option value="NATURAL SYSTEMS INTERNATIONAL S.A.">NATURAL SYSTEMS INTERNATIONAL S.A.</option>
+<option value="NESTLE DE COLOMBIA S.A (CONSUMO)">NESTLE DE COLOMBIA S.A (CONSUMO)</option>
+<option value="NEVOX FARMA S.A.">NEVOX FARMA S.A.</option>
+<option value="NEXT PHARMA SOURCING S.A.S.">NEXT PHARMA SOURCING S.A.S.</option>
+<option value="NORSTRAY NUART S.A.S.">NORSTRAY NUART S.A.S.</option>
+<option value="NOVAMED S.A.">NOVAMED S.A.</option>
+<option value="NOVARTIS DE COLOMBIA S.A .">NOVARTIS DE COLOMBIA S.A .</option>
+<option value="NOVO NORDISK COLOMBIA SAS">NOVO NORDISK COLOMBIA SAS</option>
+<option value="OFTALMO QUIMICA S.A.">OFTALMO QUIMICA S.A.</option>
+<option value="PERCOS S.A.">PERCOS S.A.</option>
+<option value="PFIZER S.A.S  .">PFIZER S.A.S  .</option>
+<option value="PHARMADERM S.A.">PHARMADERM S.A.</option>
+<option value="PHARMALAB PHL LABORATORIOS S.A.S.">PHARMALAB PHL LABORATORIOS S.A.S.</option>
+<option value="PINT PHARMA COLOMBIA S.A.S.">PINT PHARMA COLOMBIA S.A.S.</option>
+<option value="PROCAPS S.A  (FARMA)">PROCAPS S.A  (FARMA)</option>
+<option value="PROCTER  GAMBLE COLOMBIA LTDA.">PROCTER  GAMBLE COLOMBIA LTDA.</option>
+<option value="PRODUCTOS FAMILIA S.A.">PRODUCTOS FAMILIA S.A.</option>
+<option value="PRODUCTOS ROCHE S.A.">PRODUCTOS ROCHE S.A.</option>
+<option value="PROFAMILIA">PROFAMILIA</option>
+<option value="QUIFARMA S.A.">QUIFARMA S.A.</option>
+<option value="QUIMIDERM LIMITADA">QUIMIDERM LIMITADA</option>
+<option value="RB (HEALTH) COLOMBIA S.A.S">RB (HEALTH) COLOMBIA S.A.S</option>
+<option value="ROPSOHN THERAPEUTICS S.A.S.">ROPSOHN THERAPEUTICS S.A.S.</option>
+<option value="SALUS PHARMA LABS S.A.S.">SALUS PHARMA LABS S.A.S.</option>
+<option value="SANOFI  AVENTIS DE COLOMBIA S.A">SANOFI  AVENTIS DE COLOMBIA S.A</option>
+<option value="SANUTEAM S.A.S.">SANUTEAM S.A.S.</option>
+<option value="SAS EXELTYS">SAS EXELTYS</option>
+<option value="SEVEN PHARMA COLOMBIA S.A.S.">SEVEN PHARMA COLOMBIA S.A.S.</option>
+<option value="SHERLEG LABORATORIES S.A.S.">SHERLEG LABORATORIES S.A.S.</option>
+<option value="TECNOFARMA COLOMBIA S.A.S.">TECNOFARMA COLOMBIA S.A.S.</option>
+<option value="TECNOQUIMICAS S.A.">TECNOQUIMICAS S.A.</option>
+<option value="VESALIUS PHARMA S.A.S.">VESALIUS PHARMA S.A.S.</option>
+<option value="VITALIS S.A. C.I.">VITALIS S.A. C.I.</option>
+<option value="VONHALLER LABORATORIOS LTDA">VONHALLER LABORATORIOS LTDA</option>
+<option value="XINETIX PHARMA S.A.S.">XINETIX PHARMA S.A.S.</option>
+<option value="ZAMBON COLOMBIA S.A.">ZAMBON COLOMBIA S.A.</option>
+                        </select>
+                </div>
+
+                   <h4><span class="label label-default">Estado Medicamento</span></h4>
+                        <select class="form-control" name="estado" id="estado">
+                           
+                            <option value="Agotado Por Laboratorio.">Agotado Por Laboratorio.</option>
+                            <option value="Disponible.">Disponible.</option>
+                            <option value="Poca existencia.">Poca Existencia</option>
+                        </select>
+
+                <h4> <span class="label label-default"></span></h4>
+
+<hr class="my-4">
+                
+               <div class="form-group">
+                    <button class="btn btn-success btn">
+                        Guardar
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+

@@ -1,0 +1,35 @@
+<div class="col-md-8 mx-auto">
+
+  <div class="card text-dark bg-light" style="max-width: 100rem;">
+    <h2 class="card-title">Solucion del Caso</h2>
+    <div class="card-body">
+      <form action="/links/edit_task/{{tasks.id}}" method="POST">
+
+        <h4>Cierre de Caso <span class="label label-default">Clínico</span></h4>
+        <div class="form-group">
+          <select
+            class="form-control"
+            name="respuesta_medico"
+            placeholder="Laboratorio"
+           {{task.respuesta_medico}}
+          >
+            <option
+              value="A. MENARINI LATIN AMERICA S.L.U  SUCURSAL COLOMBIA"
+            >Se Envia por Correo</option>
+            <option value="ABBOTT LAB.DE COLOMBIA S.A">se llama</option>
+            <option value="ABBVIE S.A.S.">Correo rebota</option>
+            <option value="ADS PHARMA SAS">No procesado</option>
+
+          </select>
+        </div>
+
+        <hr class="my-4" />
+        <div class="form-group">
+          <button class="btn btn-success btn-block">
+            Guardar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
