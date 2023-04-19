@@ -7,7 +7,7 @@ tasksCtrl.renderAddTask = (req, res) => {
 };
 
 tasksCtrl.addTask = async (req, res) => {
-    const { title, departamento,tipoid,numeroid,nombre,telefono1,telefono2,correoelectronico,gestante,pertenece_programa,especialidad_formulo_medicamento,fecha_vigencia_formula,md_medicamento,observaciones_enfermera,description,descripciones,done,createAt,md_medicamento_dos,medico_del_caso} = req.body;
+    const { title, departamento,tipoid,numeroid,nombre,telefono1,telefono2,correoelectronico,gestante,pertenece_programa,especialidad_formulo_medicamento,fecha_vigencia_formula,md_medicamento,observaciones_enfermera,description,descripciones,done,createAt,md_medicamento_dos,medico_del_caso,remite} = req.body;
     const newTask = {
         title,
         departamento,
@@ -29,6 +29,7 @@ tasksCtrl.addTask = async (req, res) => {
         createAt,
         md_medicamento_dos,
         medico_del_caso,
+        remite,
         user_id: req.user.id
     };
     await pool.query('INSERT INTO tasks set ?', [newTask]);
@@ -64,7 +65,7 @@ tasksCtrl.renderEditTask = async (req, res) => {
 
 tasksCtrl.editTask = async (req,res) => {
     const { id } = req.params;
-    const { title, departamento,tipoid,numeroid,nombre,telefono1,telefono2,correoelectronico,gestante,pertenece_programa,especialidad_formulo_medicamento,fecha_vigencia_formula,md_medicamento,observaciones_enfermera,description,descripciones,done,createAt,md_medicamento_dos,medico_del_caso} = req.body; 
+    const { title, departamento,tipoid,numeroid,nombre,telefono1,telefono2,correoelectronico,gestante,pertenece_programa,especialidad_formulo_medicamento,fecha_vigencia_formula,md_medicamento,observaciones_enfermera,description,descripciones,done,createAt,md_medicamento_dos,medico_del_caso,remite} = req.body; 
     const newTask = {
         title,
         departamento,
@@ -86,6 +87,7 @@ tasksCtrl.editTask = async (req,res) => {
         createAt,
         md_medicamento_dos,
         medico_del_caso, 
+        remite,
     };
     
     
